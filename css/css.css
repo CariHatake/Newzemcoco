@@ -1,0 +1,143 @@
+@import
+url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Oswald:wght@200..700&family=Poppins:wght@400;500;700;800&family=Rubik+Wet+Paint&family=Tiny5&display=swap');
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	width: 100%;
+}
+
+.container {
+	width: 900;
+	padding: 50px 20px;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+    font-family: "Caveat", cursive;
+	font-weight: 400;
+	font-style: normal;
+	background: #000;
+	color: #fff;
+}
+
+
+
+img {
+    max-width: 80%;
+}
+
+header {
+	padding: 50px 0;
+}
+
+header .logo {
+	text-transform: uppercase;
+	font-size: 29px;
+	font-weight: 800;
+	color: #fff;
+}
+
+header nav {
+	float: right;
+	width: 50%
+}
+
+header nav ul {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	z-index: 2;
+	position: relative;
+}
+
+header nav ul li {
+	display: inline-block;
+}
+
+header nav ul li.active::after {
+	content: "";
+	display: block;
+	width: 40px;
+	height: 5px;
+	background: #DC7000;
+	border-radius: 10px;
+	position: relative;
+	top: 10px;
+	left: -15px;
+}
+
+header nav ul li a {
+	color: #fff;
+}
+
+header nav ul li:not(.active):not(.btn) a:hover {
+	border-bottom: 5px solid #DC7000;
+}
+
+header nav ul li.btn a, footer .blocks a {
+	background: #DC7000;
+	padding: 9px 17px;
+	border-radius: 5px;
+	color: #fff;
+	transition: all 500ms ease;
+}
+
+header nav ul li.btn a:hover, footer .blocks a:hover {
+	background: #a02604
+}
+
+.hero h1 {
+    text-align: center;
+    color: #003c02;
+	font-weight: 700;
+}
+
+.ero h1 {
+	width: 30%;
+	position: relative;
+	left: 35%;
+}
+
+.hero p {
+	color: #fff;
+	padding: 10px 30px;
+}
+
+.hero .image img {
+	width: 30%;
+	margin-left: 60px;
+	border-radius: 10px;
+}
+
+footer {
+	background: #000;
+	padding: 50px 0;
+	width: 100%;
+}
+
+footer .blocks {
+	display: flex;
+	justify-content: space-between;
+}
+
+footer .blocks p {
+	width: 150px;
+	margin: 15px 0;
+}
+
+footer .blocks h4 {
+	font-weight: 500;
+	font-size: 17px;
+}
+
+footer p {
+	text-align: center;
+}
